@@ -1,0 +1,27 @@
+@layer tailwind-base, antd;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rippleGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-gradient-ripple {
+  background: linear-gradient(270deg, #185839, #fff176, #cddc39, #0058c7, #795548, #4dd0e1);
+  background-size: 400% 400%;
+  background-clip: text;
+  color: transparent;
+  animation: rippleGradient 5s ease infinite;
+}

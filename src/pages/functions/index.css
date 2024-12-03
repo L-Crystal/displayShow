@@ -1,0 +1,11 @@
+.container {
+  .title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .unit-converter {
+    display: flex;
+    align-items: center;
+  }
+}
